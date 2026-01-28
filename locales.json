@@ -1,0 +1,151 @@
+{
+  "en": {
+    "start_welcome": "🌟 Welcome to the VIP Passive Income Bot!\n\nChoose your language:",
+    "language_selected": "✅ Language set to English",
+    "welcome_message": "🎉 <b>Welcome to the VIP Passive Income Bot!</b>\n\n💰 <b>How it works:</b>\n• Pay 1000 ⭐ once for VIP access (7 days)\n• Get your unique referral link\n• Invite friends and earn from 5 levels:\n  → Level 1: 40% (400 ⭐)\n  → Level 2: 20% (200 ⭐)\n  → Level 3: 10% (100 ⭐)\n  → Level 4: 5% (50 ⭐)\n  → Level 5: 3% (30 ⭐)\n\n🎯 <b>Just 3 referrals = profit!</b>\n3 × 400 = 1,200 ⭐ (already in the green!)\n\n🎁 <b>Bonuses:</b>\n✨ Ranks: Earn +5% to +15% extra\n🎁 Chests: Every 10th referral = prize up to 1,000 ⭐\n🏆 Leaderboard: Top 3 weekly win 500/300/150 ⭐\n🎄 New Year: 5 refs in 24h = x2 forever!\n\n📈 <b>100% automated system</b>\nEverything happens automatically - just invite and earn! 🚀",
+    "main_menu": "🎯 Main Menu",
+    "my_profile": "👤 My Profile",
+    "referrals": "👥 Referrals",
+    "leaderboard": "🏆 Leaderboard",
+    "withdraw": "💰 Withdraw",
+    "settings": "⚙️ Settings",
+    "buy_access": "💎 Buy VIP Access (1000 ⭐)",
+
+    "profile_text": "👤 <b>Your Profile</b>\n\n💎 Rank: {rank}\n⭐ Balance: {balance} Stars\n💰 Total Earned: {total_earned} Stars\n👥 Referrals: {referrals_count}\n📅 VIP Until: {paid_until}\n\n🔗 Your Referral Link:\n{ref_link}",
+
+    "ranks": {
+      "Novato": "⭐ Beginner",
+      "Cazador": "🌟 Hunter",
+      "Maestro": "✨ Master",
+      "Leyenda": "💫 Legend"
+    },
+
+    "referrals_text": "👥 <b>Your Referral Network</b>\n\n📊 Level 1: {level1} refs (40% = {level1_earned} ⭐)\n📊 Level 2: {level2} refs (20% = {level2_earned} ⭐)\n📊 Level 3: {level3} refs (10% = {level3_earned} ⭐)\n📊 Level 4: {level4} refs (5% = {level4_earned} ⭐)\n📊 Level 5: {level5} refs (3% = {level5_earned} ⭐)\n\n💰 Total from referrals: {total} ⭐",
+
+    "leaderboard_text": "🏆 <b>Top Referrers (This Week)</b>\n\n{leaderboard}\n\n🎁 Prizes:\n🥇 1st: +500 ⭐\n🥈 2nd: +300 ⭐\n🥉 3rd: +150 ⭐\n\n⏰ Resets in: {reset_time}",
+
+    "withdraw_text": "💰 <b>Withdraw Stars</b>\n\nYour balance: {balance} ⭐\n\nEnter amount to withdraw:",
+    "withdraw_success": "✅ Withdrawal request sent!\n\nAmount: {amount} ⭐\nAdmin will process it soon.",
+    "withdraw_min": "❌ Minimum withdrawal: 100 ⭐",
+    "withdraw_insufficient": "❌ Insufficient balance",
+
+    "payment_success": "✅ <b>Payment Successful!</b>\n\nYou now have VIP access for 7 days!\n\n🎁 Start inviting friends and earn:\n• 40% from Level 1\n• 20% from Level 2\n• 10% from Level 3\n• 5% from Level 4\n• 3% from Level 5\n\n🔗 Your referral link:\n{ref_link}",
+
+    "mystery_chest": "🎁 <b>MYSTERY CHEST UNLOCKED!</b>\n\nYou got: {prize} ⭐\n\nCongratulations! 🎉",
+
+    "rank_up": "🎊 <b>RANK UP!</b>\n\nYou are now: {rank}\n\nBonus: +{bonus}% to all earnings!",
+
+    "new_year_bonus": "🎄 <b>NEW YEAR BONUS!</b>\n\nYou invited 5 refs in 24h!\n\nAll earnings from them: x2 FOREVER! 🔥",
+
+    "no_access": "❌ You need VIP access to use this.\n\nBuy now: 1000 ⭐ for 7 days",
+
+    "settings_text": "⚙️ <b>Settings</b>\n\nCurrent language: {language}",
+    "change_language": "🌐 Change Language",
+
+    "admin_new_withdrawal": "💰 <b>New Withdrawal Request</b>\n\nUser: {username} (@{user_id})\nAmount: {amount} ⭐\nBalance: {balance} ⭐\n\nApprove?",
+
+    "invoice_title": "VIP Access",
+    "invoice_description": "Get VIP access for 7 days and start earning with referrals!",
+    "invoice_label": "VIP Access (7 days)"
+  },
+
+  "es": {
+    "start_welcome": "🌟 ¡Bienvenido al Bot VIP de Ingreso Pasivo!\n\nElige tu idioma:",
+    "language_selected": "✅ Idioma configurado a Español",
+    "welcome_message": "🎉 <b>¡Bienvenido al Bot VIP de Ingreso Pasivo!</b>\n\n💰 <b>Cómo funciona:</b>\n• Paga 1000 ⭐ una vez por acceso VIP (7 días)\n• Obtén tu enlace de referido único\n• Invita amigos y gana de 5 niveles:\n  → Nivel 1: 40% (400 ⭐)\n  → Nivel 2: 20% (200 ⭐)\n  → Nivel 3: 10% (100 ⭐)\n  → Nivel 4: 5% (50 ⭐)\n  → Nivel 5: 3% (30 ⭐)\n\n🎯 <b>¡Solo 3 referidos = ganancia!</b>\n3 × 400 = 1,200 ⭐ (¡ya estás en verde!)\n\n🎁 <b>Bonificaciones:</b>\n✨ Rangos: Gana +5% a +15% extra\n🎁 Cofres: Cada 10 refs = premio hasta 1,000 ⭐\n🏆 Clasificación: Top 3 semanal ganan 500/300/150 ⭐\n🎄 Año Nuevo: 5 refs en 24h = x2 para siempre!\n\n📈 <b>Sistema 100% automático</b>\n¡Todo sucede automáticamente - solo invita y gana! 🚀",
+    "main_menu": "🎯 Menú Principal",
+    "my_profile": "👤 Mi Perfil",
+    "referrals": "👥 Referencias",
+    "leaderboard": "🏆 Clasificación",
+    "withdraw": "💰 Retirar",
+    "settings": "⚙️ Ajustes",
+    "buy_access": "💎 Comprar Acceso VIP (1000 ⭐)",
+
+    "profile_text": "👤 <b>Tu Perfil</b>\n\n💎 Rango: {rank}\n⭐ Balance: {balance} Estrellas\n💰 Ganado Total: {total_earned} Estrellas\n👥 Referencias: {referrals_count}\n📅 VIP Hasta: {paid_until}\n\n🔗 Tu Enlace de Referido:\n{ref_link}",
+
+    "ranks": {
+      "Novato": "⭐ Novato",
+      "Cazador": "🌟 Cazador",
+      "Maestro": "✨ Maestro",
+      "Leyenda": "💫 Leyenda"
+    },
+
+    "referrals_text": "👥 <b>Tu Red de Referencias</b>\n\n📊 Nivel 1: {level1} refs (40% = {level1_earned} ⭐)\n📊 Nivel 2: {level2} refs (20% = {level2_earned} ⭐)\n📊 Nivel 3: {level3} refs (10% = {level3_earned} ⭐)\n📊 Nivel 4: {level4} refs (5% = {level4_earned} ⭐)\n📊 Nivel 5: {level5} refs (3% = {level5_earned} ⭐)\n\n💰 Total de referencias: {total} ⭐",
+
+    "leaderboard_text": "🏆 <b>Top Referencias (Esta Semana)</b>\n\n{leaderboard}\n\n🎁 Premios:\n🥇 1º: +500 ⭐\n🥈 2º: +300 ⭐\n🥉 3º: +150 ⭐\n\n⏰ Se reinicia en: {reset_time}",
+
+    "withdraw_text": "💰 <b>Retirar Estrellas</b>\n\nTu balance: {balance} ⭐\n\nIngresa cantidad a retirar:",
+    "withdraw_success": "✅ ¡Solicitud enviada!\n\nMonto: {amount} ⭐\nEl admin la procesará pronto.",
+    "withdraw_min": "❌ Retiro mínimo: 100 ⭐",
+    "withdraw_insufficient": "❌ Saldo insuficiente",
+
+    "payment_success": "✅ <b>¡Pago Exitoso!</b>\n\n¡Ahora tienes acceso VIP por 7 días!\n\n🎁 Invita amigos y gana:\n• 40% del Nivel 1\n• 20% del Nivel 2\n• 10% del Nivel 3\n• 5% del Nivel 4\n• 3% del Nivel 5\n\n🔗 Tu enlace de referido:\n{ref_link}",
+
+    "mystery_chest": "🎁 <b>¡COFRE MISTERIOSO DESBLOQUEADO!</b>\n\n¡Ganaste: {prize} ⭐!\n\n¡Felicidades! 🎉",
+
+    "rank_up": "🎊 <b>¡SUBISTE DE RANGO!</b>\n\nAhora eres: {rank}\n\nBono: +{bonus}% a todas las ganancias!",
+
+    "new_year_bonus": "🎄 <b>¡BONO DE AÑO NUEVO!</b>\n\n¡Invitaste 5 refs en 24h!\n\n¡Todas sus ganancias: x2 PARA SIEMPRE! 🔥",
+
+    "no_access": "❌ Necesitas acceso VIP para usar esto.\n\nCompra ahora: 1000 ⭐ por 7 días",
+
+    "settings_text": "⚙️ <b>Ajustes</b>\n\nIdioma actual: {language}",
+    "change_language": "🌐 Cambiar Idioma",
+
+    "admin_new_withdrawal": "💰 <b>Nueva Solicitud de Retiro</b>\n\nUsuario: {username} (@{user_id})\nMonto: {amount} ⭐\nBalance: {balance} ⭐\n\n¿Aprobar?",
+
+    "invoice_title": "Acceso VIP",
+    "invoice_description": "¡Obtén acceso VIP por 7 días y empieza a ganar con referencias!",
+    "invoice_label": "Acceso VIP (7 días)"
+  },
+
+  "pt": {
+    "start_welcome": "🌟 Bem-vindo ao Bot VIP de Renda Passiva!\n\nEscolha seu idioma:",
+    "language_selected": "✅ Idioma definido para Português",
+    "welcome_message": "🎉 <b>Bem-vindo ao Bot VIP de Renda Passiva!</b>\n\n💰 <b>Como funciona:</b>\n• Pague 1000 ⭐ uma vez por acesso VIP (7 dias)\n• Receba seu link de indicação único\n• Convide amigos e ganhe de 5 níveis:\n  → Nível 1: 40% (400 ⭐)\n  → Nível 2: 20% (200 ⭐)\n  → Nível 3: 10% (100 ⭐)\n  → Nível 4: 5% (50 ⭐)\n  → Nível 5: 3% (30 ⭐)\n\n🎯 <b>Apenas 3 indicações = lucro!</b>\n3 × 400 = 1.200 ⭐ (já no verde!)\n\n🎁 <b>Bônus:</b>\n✨ Ranks: Ganhe +5% a +15% extra\n🎁 Baús: A cada 10 refs = prêmio até 1.000 ⭐\n🏆 Ranking: Top 3 semanal ganham 500/300/150 ⭐\n🎄 Ano Novo: 5 refs em 24h = x2 para sempre!\n\n📈 <b>Sistema 100% automático</b>\nTudo acontece automaticamente - apenas convide e ganhe! 🚀",
+    "main_menu": "🎯 Menu Principal",
+    "my_profile": "👤 Meu Perfil",
+    "referrals": "👥 Indicações",
+    "leaderboard": "🏆 Ranking",
+    "withdraw": "💰 Sacar",
+    "settings": "⚙️ Configurações",
+    "buy_access": "💎 Comprar Acesso VIP (1000 ⭐)",
+
+    "profile_text": "👤 <b>Seu Perfil</b>\n\n💎 Rank: {rank}\n⭐ Saldo: {balance} Estrelas\n💰 Total Ganho: {total_earned} Estrelas\n👥 Indicações: {referrals_count}\n📅 VIP Até: {paid_until}\n\n🔗 Seu Link de Indicação:\n{ref_link}",
+
+    "ranks": {
+      "Novato": "⭐ Novato",
+      "Cazador": "🌟 Caçador",
+      "Maestro": "✨ Mestre",
+      "Leyenda": "💫 Lenda"
+    },
+
+    "referrals_text": "👥 <b>Sua Rede de Indicações</b>\n\n📊 Nível 1: {level1} refs (40% = {level1_earned} ⭐)\n📊 Nível 2: {level2} refs (20% = {level2_earned} ⭐)\n📊 Nível 3: {level3} refs (10% = {level3_earned} ⭐)\n📊 Nível 4: {level4} refs (5% = {level4_earned} ⭐)\n📊 Nível 5: {level5} refs (3% = {level5_earned} ⭐)\n\n💰 Total de indicações: {total} ⭐",
+
+    "leaderboard_text": "🏆 <b>Top Indicadores (Esta Semana)</b>\n\n{leaderboard}\n\n🎁 Prêmios:\n🥇 1º: +500 ⭐\n🥈 2º: +300 ⭐\n🥉 3º: +150 ⭐\n\n⏰ Reinicia em: {reset_time}",
+
+    "withdraw_text": "💰 <b>Sacar Estrelas</b>\n\nSeu saldo: {balance} ⭐\n\nDigite o valor para sacar:",
+    "withdraw_success": "✅ Solicitação enviada!\n\nValor: {amount} ⭐\nO admin processará em breve.",
+    "withdraw_min": "❌ Saque mínimo: 100 ⭐",
+    "withdraw_insufficient": "❌ Saldo insuficiente",
+
+    "payment_success": "✅ <b>Pagamento Bem-Sucedido!</b>\n\nVocê tem acesso VIP por 7 dias!\n\n🎁 Convide amigos e ganhe:\n• 40% do Nível 1\n• 20% do Nível 2\n• 10% do Nível 3\n• 5% do Nível 4\n• 3% do Nível 5\n\n🔗 Seu link de indicação:\n{ref_link}",
+
+    "mystery_chest": "🎁 <b>BAÚ MISTERIOSO DESBLOQUEADO!</b>\n\nVocê ganhou: {prize} ⭐!\n\nParabéns! 🎉",
+
+    "rank_up": "🎊 <b>SUBIU DE RANK!</b>\n\nAgora você é: {rank}\n\nBônus: +{bonus}% em todos os ganhos!",
+
+    "new_year_bonus": "🎄 <b>BÔNUS DE ANO NOVO!</b>\n\nVocê indicou 5 refs em 24h!\n\nTodos os ganhos deles: x2 PARA SEMPRE! 🔥",
+
+    "no_access": "❌ Você precisa de acesso VIP para usar isso.\n\nCompre agora: 1000 ⭐ por 7 dias",
+
+    "settings_text": "⚙️ <b>Configurações</b>\n\nIdioma atual: {language}",
+    "change_language": "🌐 Mudar Idioma",
+
+    "admin_new_withdrawal": "💰 <b>Nova Solicitação de Saque</b>\n\nUsuário: {username} (@{user_id})\nValor: {amount} ⭐\nSaldo: {balance} ⭐\n\nAprovar?",
+
+    "invoice_title": "Acesso VIP",
+    "invoice_description": "Obtenha acesso VIP por 7 dias e comece a ganhar com indicações!",
+    "invoice_label": "Acesso VIP (7 dias)"
+  }
+}
