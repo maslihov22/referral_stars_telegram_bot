@@ -1,77 +1,46 @@
-# 🌟 Telegram Stars MLM Referral Bot
+# Telegram Stars Referral & Rewards Bot
 
-Вирусная реферальная система с 5-уровневой MLM структурой, геймификацией и поддержкой мультиязычности (EN/ES/PT-BR).
+Telegram bot implementing a multi-tier referral rewards program with gamification and multi-language support (EN / ES / PT-BR). Built with Python (aiogram), Supabase (PostgreSQL) and native Telegram Stars payments.
 
-## 🎯 Основные фичи
+## Features
 
-### 💎 Реферальная система (5 уровней)
-- **Уровень 1:** 40% от платежа (400 Stars с 1000)
-- **Уровень 2:** 20% от платежа (200 Stars)
-- **Уровень 3:** 10% от платежа (100 Stars)
-- **Уровень 4:** 5% от платежа (50 Stars)
-- **Уровень 5:** 3% от платежа (30 Stars)
+### Referral rewards (5 configurable tiers)
+Referrers earn a configurable percentage of payments made by users they invited, across up to 5 referral levels (40% / 20% / 10% / 5% / 3% by default).
 
-**Математика окупаемости:**
-- Приведи 3 реферала = 1200 Stars (уже в плюсе)
-- Каждый из 3-х приведёт по 3 = +1800 Stars с уровня 2
-- Геометрическая прогрессия = пассивный доход
+### Gamification
+- **Rank system** — Novato / Cazador / Maestro / Leyenda ranks based on referral count, each adding a payout bonus (+5% to +15%).
+- **Reward chests** — every 10th referral opens a chest with a randomized Stars prize.
+- **Weekly leaderboard** — top-3 referrers receive bonus Stars.
+- **Seasonal promotions** — time-limited multiplier bonuses.
 
-### 🎰 Геймификация
+### Multi-language
+- English, Español, Português — all strings live in `locales.json`.
 
-#### Ранговая система:
-- ⭐ **Novato** (0-2 рефа) — базовый доступ
-- 🌟 **Cazador** (3-9 рефов) — +5% к выплатам
-- ✨ **Maestro** (10-29 рефов) — +10% к выплатам
-- 💫 **Leyenda** (30+ рефов) — +15% к выплатам
+### Admin tools
+- `/admin` — withdrawal request queue
+- `/stats` — users, active VIPs, revenue, pending payouts
+- `/approve_XXXXXXXX` / `/reject_XXXXXXXX` — payout moderation
 
-#### Таинственные сундуки:
-Каждый 10-й реферал открывает сундук с призом:
-- 50% шанс: +100 Stars
-- 30% шанс: +300 Stars
-- 15% шанс: +500 Stars
-- 5% шанс: +1000 Stars (джекпот!)
+## Tech stack
 
-#### Еженедельный лидерборд:
-Топ-3 рефовода получают бонусы:
-- 🥇 1 место: +500 Stars
-- 🥈 2 место: +300 Stars
-- 🥉 3 место: +150 Stars
+- **Python + aiogram** — bot framework, async handlers
+- **Supabase (PostgreSQL)** — users, referrals, payouts (`database_schema.sql`)
+- **Telegram Stars** — native in-app payments
+- **dotenv-based config** — see `.env.example`
 
-#### Новогодний бонус:
-Приведи 5 рефералов за 24 часа → ×2 к выплатам с них навсегда!
+## Setup
 
-### 🌍 Мультиязычность
-- 🇺🇸 English
-- 🇪🇸 Español (для LATAM)
-- 🇧🇷 Português (для Бразилии)
+### 1. Create a Telegram bot
+1. Open [@BotFather](https://t.me/BotFather), send `/newbot`
+2. Set name and username, copy the token
+3. Enable Stars payments: `/setpayments` → select the bot
 
----
+### 2. Set up Supabase
+1. Create a project at [supabase.com](https://supabase.com)
+2. Run `database_schema.sql` in the SQL Editor
+3. Copy `Project URL` and the `anon/public` key from Project Settings → API
 
-## 🚀 Установка и запуск
-
-### 1. Создай Telegram бота
-1. Открой [@BotFather](https://t.me/BotFather)
-2. Отправь `/newbot`
-3. Укажи имя и username
-4. Скопируй токен (формат: `1234567890:ABCdefGHIjklMNOpqrsTUVwxyz`)
-
-### 2. Настрой Supabase
-
-1. Зарегистрируйся на [supabase.com](https://supabase.com)
-2. Создай новый проект
-3. В SQL Editor вставь содержимое файла `database_schema.sql`
-4. Выполни скрипт (Run)
-5. В Project Settings → API скопируй:
-   - `Project URL` (SUPABASE_URL)
-   - `anon/public` ключ (SUPABASE_KEY)
-
-### 3. Узнай свой Telegram ID
-
-Отправь `/start` боту [@userinfobot](https://t.me/userinfobot) — он вернёт твой ID.
-
-### 4. Настрой переменные окружения
-
-Создай файл `.env` (скопируй из `.env.example`):
+### 3. Configure environment
 
 ```env
 BOT_TOKEN=1234567890:ABCdefGHIjklMNOpqrsTUVwxyz
@@ -82,76 +51,32 @@ STARS_PRICE=1000
 WEEK_DURATION=7
 ```
 
-### 5. Установи зависимости
+Get your Telegram ID from [@userinfobot](https://t.me/userinfobot).
+
+### 4. Install and run
 
 ```bash
 pip install -r requirements.txt
-```
-
-### 6. Запусти бота
-
-```bash
 python main.py
 ```
 
-Если всё настроено правильно, увидишь:
-```
-==================================================
-🌟 Stars MLM Bot Started!
-==================================================
-📱 Bot is running...
-🔥 Ready to make money! 💰
-==================================================
-```
+## Customization
 
----
-
-## 📱 Использование
-
-### Для юзеров:
-
-1. `/start` — начало, выбор языка
-2. **Купить VIP** → оплата 1000 Stars через Telegram
-3. Получить реферальную ссылку
-4. Пригласить друзей
-5. Получать % с их платежей (5 уровней!)
-6. Вывести заработок через кнопку "Withdraw"
-
-### Для админа:
-
-- `/admin` — список заявок на вывод
-- `/stats` — статистика бота (юзеры, VIP, revenue)
-- `/approve_XXXXXXXX` — одобрить выплату
-- `/reject_XXXXXXXX` — отклонить выплату
-
----
-
-## 🎨 Кастомизация
-
-### Изменить процент выплат
-
-В [bot.py:38-44](bot.py#L38-L44):
+**Referral tier percentages** — [bot.py:38-44](bot.py#L38-L44):
 
 ```python
 REFERRAL_BONUSES = {
-    1: 0.40,  # 40%
-    2: 0.20,  # 20%
-    3: 0.10,  # 10%
-    4: 0.05,  # 5%
-    5: 0.03   # 3%
+    1: 0.40,
+    2: 0.20,
+    3: 0.10,
+    4: 0.05,
+    5: 0.03
 }
 ```
 
-### Изменить цену VIP
+**VIP price** — `STARS_PRICE` in `.env`.
 
-В `.env`:
-```env
-STARS_PRICE=1000  # Измени на нужное значение
-```
-
-### Изменить требования для рангов
-
-В [bot.py:47-52](bot.py#L47-L52):
+**Rank thresholds** — [bot.py:47-52](bot.py#L47-L52):
 
 ```python
 RANKS = {
@@ -162,113 +87,14 @@ RANKS = {
 }
 ```
 
-### Добавить/изменить переводы
+**Translations** — edit `locales.json`.
 
-Редактируй [locales.json](locales.json) — все тексты там.
+## Monitoring
 
----
+Built-in metrics via `/stats`: total users, active VIPs, revenue, pending withdrawals.
 
-## 💰 Как работает экономика
+Ad-hoc analytics through Supabase SQL, e.g. top referrers:
 
-### Пример расчёта:
-
-**Ты приглашаешь 5 человек:**
-- 5 × 400 Stars (40%) = **2000 Stars**
-- Уже окупился в 2 раза!
-
-**Каждый из 5-ти приглашает ещё по 5:**
-- 25 × 200 Stars (20% уровень 2) = **5000 Stars**
-
-**Третий уровень (125 человек):**
-- 125 × 100 Stars (10%) = **12,500 Stars**
-
-**ИТОГО с 3 уровней:** 19,500 Stars (~$195 если 1 Star = $0.01)
-
-И это не учитывая:
-- Бонусы рангов (+5-15%)
-- Таинственные сундуки
-- Новогодний бонус (×2)
-- Призы лидерборда
-
----
-
-## 🔥 Стратегии продвижения
-
-### 1. Telegram-каналы LATAM
-Найди крипто/геймер чаты в LATAM и постируй:
-```
-🌟 ¡Gana dinero invitando amigos!
-💰 Paga 1000 ⭐ una vez → Gana para siempre
-🔥 5 niveles de comisiones (hasta 78%)
-🎁 Bonos + Premios semanales
-👉 [Твоя реф-ссылка]
-```
-
-### 2. Сарафанное радио
-- Дай топовым рефоводам эксклюзивные бонусы
-- Создай закрытый VIP-канал для топ-50
-- Проводи конкурсы с крупными призами
-
-### 3. Инфлюенсеры
-- Найди микро-инфлюенсеров (5-50k подписчиков)
-- Предложи им долю с их рефералов (партнёрка)
-- Или разовую оплату за рекламу
-
-### 4. Крипто-коммьюнити
-- Reddit: r/cryptocurrency, r/passive_income
-- Discord-серверы по аирдропам
-- Twitter-треды про заработок
-
----
-
-## ⚠️ Легальность
-
-**Это чистая MLM-пирамида**, поэтому:
-
-1. **Telegram может забанить** — используй обёртку ("AI-бот", "крипто-сигналы")
-2. **Не гарантируй доход** — пиши "потенциальный заработок"
-3. **Добавь disclaimer** в описание бота
-4. **Регистрируй юр.лицо** если объёмы станут большими
-
-### Как обойти модерацию:
-
-- Не пиши "MLM", "пирамида" в описании
-- Добавь "продукт" — хотя бы PDF с крипто-советами
-- Делай акцент на "образовании" и "комьюнити"
-
----
-
-## 🛠 Troubleshooting
-
-### Ошибка: "Supabase connection failed"
-- Проверь SUPABASE_URL и SUPABASE_KEY в `.env`
-- Убедись, что база создана и схема выполнена
-
-### Ошибка: "Unauthorized" при платеже
-- Включи Telegram Stars в настройках бота через @BotFather
-- Команда: `/setpayments` → выбери бота → включи Stars
-
-### Бот не отвечает
-- Проверь BOT_TOKEN в `.env`
-- Убедись, что бот не запущен в другом месте
-
-### Рефералы не засчитываются
-- Проверь, что юзеры используют именно твою реф-ссылку
-- Проверь логи функции `process_referral_bonuses`
-
----
-
-## 📊 Мониторинг и аналитика
-
-### Встроенные метрики (команда `/stats`):
-- Всего юзеров
-- Активных VIP
-- Общий revenue
-- Сумма на вывод
-
-### Дополнительная аналитика (ручная через Supabase SQL):
-
-**Топ-10 рефоводов всего времени:**
 ```sql
 SELECT username, referrals_count, total_earned
 FROM users
@@ -276,60 +102,13 @@ ORDER BY referrals_count DESC
 LIMIT 10;
 ```
 
-**Конверсия в VIP:**
-```sql
-SELECT
-  COUNT(*) FILTER (WHERE paid_until > NOW()) * 100.0 / COUNT(*) as vip_rate
-FROM users;
-```
+## Troubleshooting
+
+- **"Supabase connection failed"** — check `SUPABASE_URL` / `SUPABASE_KEY`, make sure the schema was applied.
+- **"Unauthorized" on payment** — enable Telegram Stars via @BotFather (`/setpayments`).
+- **Bot not responding** — check `BOT_TOKEN`, make sure no second instance is running.
+- **Referrals not counted** — verify the referral link format and the `process_referral_bonuses` logs.
 
 ---
 
-## 🚀 Roadmap (что добавить дальше)
-
-- [ ] Автовыплаты через Telegram Stars API
-- [ ] Telegram Mini App для статистики
-- [ ] Партнёрская программа для инфлюенсеров
-- [ ] Крипто-кошелёк для вывода (USDT/TON)
-- [ ] Реферальные конкурсы с мега-призами
-- [ ] Интеграция с TON blockchain
-- [ ] NFT-бейджи для топ-рефоводов
-
----
-
-## 📞 Поддержка
-
-Если нужна помощь:
-1. Проверь [Troubleshooting](#-troubleshooting)
-2. Изучи код — всё прокомментировано
-3. Погугли ошибку
-4. Спроси в Telegram-чатах по aiogram
-
----
-
-## ⚡️ Quick Start (TL;DR)
-
-```bash
-# 1. Клонируй/создай проект
-cd stars_bot
-
-# 2. Установи зависимости
-pip install -r requirements.txt
-
-# 3. Создай .env (скопируй токены)
-cp .env.example .env
-nano .env
-
-# 4. Настрой Supabase (выполни database_schema.sql)
-
-# 5. Запусти
-python main.py
-
-# 6. Profit! 🚀
-```
-
----
-
-**Сделано с 🔥 для максимального фарма Stars в LATAM**
-
-*Disclaimer: это образовательный проект. Используй на свой риск. Автор не несёт ответственности за блокировки, баны или юридические последствия.*
+*Educational / portfolio project demonstrating referral mechanics, Telegram Stars payments and Supabase integration. Any production deployment of referral-reward systems must comply with Telegram's Terms of Service and applicable local regulations.*
