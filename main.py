@@ -1,6 +1,6 @@
 """
-Telegram Stars MLM Referral Bot
-Вирусная реферальная система с геймификацией для LATAM
+Telegram Stars Referral & Rewards Bot
+Multi-tier referral rewards system with gamification (EN/ES/PT-BR)
 """
 import asyncio
 import sys
@@ -14,10 +14,10 @@ if sys.platform == 'win32':
 async def main():
     """Start bot"""
     print("=" * 50)
-    print("🌟 Stars MLM Bot Started!")
+    print("🌟 Stars Referral Bot Started!")
     print("=" * 50)
     print("📱 Bot is running...")
-    print("🔥 Ready to make money! 💰")
+    print("✅ Polling for updates...")
     print("=" * 50)
 
     try:
